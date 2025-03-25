@@ -155,7 +155,7 @@ if not data.empty:
     # After filters, sort by employee:
     data = data.sort_values(by=['employee'], ascending=True)
 
-    st.subheader(f"The selected data has {row_num} rows of data, from {start_date} to {end_date}")
+    st.subheader(f"Shifs from {start_date} to {end_date}")
     st.dataframe(data)
 
     with st.sidebar:
