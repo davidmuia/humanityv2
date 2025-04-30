@@ -4,10 +4,6 @@ requests==2.31.0
 pandas==2.2.2
 numpy==1.26.4
 
-# Transitive dependencies and other packages from the original list
-# Note: Some of these might be transitive dependencies (installed automatically)
-# or related to development environments (like jupyter/ipython).
-# Consider cleaning this list further if only deployment dependencies are needed.
 altair==5.3.0
 argon2-cffi==23.1.0
 astor==0.8.1        # Usually related to AST manipulation, potentially from ipython/jupyter
@@ -23,7 +19,6 @@ cffi==1.16.0        # argon2-cffi dependency
 charset-normalizer==3.3.2 # requests dependency
 click==8.1.7        # Streamlit dependency
 colorama==0.4.6     # Dependency for colored terminal output (e.g., ipython)
-# debugpy           # Typically for debugging, often not needed in production requirements. Removed unless specifically needed.
 decorator==5.1.1    # ipython dependency
 defusedxml==0.7.1   # nbconvert dependency
 entrypoints==0.4    # Older mechanism for plugins, still used by some packages
@@ -48,7 +43,6 @@ nbclient==0.10.0    # For executing notebooks, nbconvert dependency
 nbconvert==7.16.3   # For converting notebooks
 nbformat==5.10.4    # For the notebook format specification
 nest-asyncio==1.6.0 # Allows nesting asyncio event loops, used by jupyter/ipython
-# notebook          # Classic Jupyter Notebook interface. Often replaced by JupyterLab or not needed for just running kernels. Removed unless specifically needed.
 packaging==24.0     # Core library for package handling
 pandocfilters==1.5.1 # nbconvert dependency if using pandoc
 parso==0.8.4        # Parser used by jedi
@@ -66,10 +60,8 @@ pyrsistent==0.20.0  # Persistent data structures, jsonschema dependency
 python-dateutil==2.9.0.post0 # pandas dependency
 pytz==2024.1        # pandas dependency for timezones
 pyzmq==25.1.2       # jupyter-client dependency (ZeroMQ bindings)
-# Send2Trash        # Removed unless specifically needed (Jupyter dependency for trash functionality)
 six==1.16.0         # Python 2/3 compatibility library, still a dependency for some older packages
 smmap==5.0.1        # gitdb dependency
-# setuptools        # Usually managed by pip/build tools, removed unless a specific version is required for build process
 terminado==0.18.1   # Websocket terminal server, jupyter dependency
 testpath==0.6.0     # nbconvert dependency
 toml==0.10.2        # Streamlit dependency for config files
